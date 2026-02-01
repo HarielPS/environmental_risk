@@ -513,7 +513,7 @@ export default function AuditoriaResumenPage() {
                 </div>
 
                 <button
-                  onClick={() => router.push("/steps")}
+                  onClick={() => router.push("/step2")}
                   className="inline-flex items-center cursor-pointer justify-center gap-2 rounded-full bg-emerald-400 px-4 py-2.5 text-xs md:text-sm font-semibold text-slate-900 shadow-sm hover:bg-emerald-300 transition-colors"
                 >
                   Continuar con selección de partners
