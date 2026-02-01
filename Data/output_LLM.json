@@ -1,0 +1,39 @@
+{
+  "obra_id": "OBRA-001",
+  "evaluacion_fecha": "2026-02-01",
+  "resultado_global": {
+    "estatus": "needs_info",
+    "riesgo": "medio",
+    "razones": [
+      "Falta unidad funcional y límites del cálculo ISO 14067",
+      "Falta plan de manejo RCD NACDMX-007",
+      "Falta plan/bitácora de control de polvo NADF-018"
+    ]
+  },
+  "por_norma": [
+    {
+      "norma": "ISO_14067",
+      "estatus": "needs_info",
+      "evidencia_usada": ["materiales[*].co2e_kg", "obra_descripcion", "ubicacion"],
+      "faltantes": ["unidad_funcional", "etapas_ciclo_vida", "fuentes_factores", "incertidumbre"],
+      "acciones_recomendadas": ["Definir unidad funcional", "Declarar límites (A1-A3/A4/A5)", "Vincular factores a EPD/LCA"]
+    },
+    {
+      "norma": "NACDMX-007-RNAT-2019",
+      "estatus": "needs_info",
+      "faltantes": ["estimacion_rcd", "sitio_disposicion", "transportista", "evidencias_manifiestos"],
+      "acciones_recomendadas": ["Crear plan de manejo RCD", "Separación y destino autorizado", "Guardar comprobantes"]
+    },
+    {
+      "norma": "NADF-018-AMBT-2009",
+      "estatus": "needs_info",
+      "faltantes": ["medidas_control_polvo", "bitacora_control", "responsable"],
+      "acciones_recomendadas": ["Checklist de control de polvo", "Bitácora diaria por fase de obra"]
+    }
+  ],
+  "preguntas_para_completar": [
+    "¿La huella es solo materiales (cradle-to-gate) o incluye transporte y obra (A4/A5)?",
+    "¿Habrá demolición o solo construcción?",
+    "¿Existe licencia/manifestación y DRO?"
+  ]
+}

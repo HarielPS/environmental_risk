@@ -1,0 +1,408 @@
+{
+    "request_id": "REQ-2026-02-01-OBRA-001",
+    "context": {
+      "company_id": "697f3012b5e22c46cc772035",
+      "obra_id": "OBRA-001",
+      "currency": "MXN"
+    },
+    "site": {
+      "latitud": 19.35,
+      "longitud": -99.06
+    },
+    "requirements": [
+      {
+        "req_id": "R-001",
+        "material_nombre": "Panel de yeso (tablaroca) + pasta de juntas",
+        "categoria": "recubrimiento",
+        "unidad": "m2",
+        "cantidad": 154
+      },
+      {
+        "req_id": "R-002",
+        "material_nombre": "Pintura (vinílica)",
+        "categoria": "pintura",
+        "unidad": "L",
+        "cantidad": 128
+      },
+      {
+        "req_id": "R-003",
+        "material_nombre": "Agregados locales (banco más cercano)",
+        "categoria": "agregados_mortero",
+        "unidad": "t",
+        "cantidad": 27
+      },
+      {
+        "req_id": "R-004",
+        "material_nombre": "Acero de refuerzo (Malla electrosoldada)",
+        "categoria": "acero",
+        "unidad": "kg",
+        "cantidad": 7413
+      }
+    ],
+    "optionsByRequirement": [
+      {
+        "req_id": "R-001",
+        "match_rule": "material_nombre_exact",
+        "options": [
+          {
+            "option_id": "O-001",
+            "id_material": "MAT-004",
+            "provedoor_id": "PROV-001",
+            "nombre_provedor": "Materiales Iztapalapa S.A. de C.V.",
+            "supplier": {
+              "latitud": 19.569573,
+              "longitud": -99.307641,
+              "delivery": { "minDays": 3, "maxDays": 6 },
+              "rating": 4.3
+            },
+            "offer": {
+              "unidad": "m2",
+              "costo_unitario_mxn": 77.3,
+              "factor_emision_kgco2e_por_unidad": 0.848,
+              "co2_verified": false,
+              "variant": "Estándar"
+            }
+          },
+          {
+            "option_id": "O-002",
+            "id_material": "MAT-020",
+            "provedoor_id": "PROV-007",
+            "nombre_provedor": "Yesos y Acabados Roma",
+            "supplier": {
+              "latitud": 19.276039,
+              "longitud": -99.32306,
+              "delivery": { "minDays": 2, "maxDays": 5 },
+              "rating": 4.4
+            },
+            "offer": {
+              "unidad": "m2",
+              "costo_unitario_mxn": 106.88,
+              "factor_emision_kgco2e_por_unidad": 0.786,
+              "co2_verified": false,
+              "variant": "Estándar"
+            }
+          },
+          {
+            "option_id": "O-003",
+            "id_material": "MAT-122",
+            "provedoor_id": "PROV-013",
+            "nombre_provedor": "EcoYesos CDMX",
+            "supplier": {
+              "latitud": 19.4159,
+              "longitud": -99.1451,
+              "delivery": { "minDays": 1, "maxDays": 3 },
+              "rating": 4.6
+            },
+            "offer": {
+              "unidad": "m2",
+              "costo_unitario_mxn": 98.5,
+              "factor_emision_kgco2e_por_unidad": 0.612,
+              "co2_verified": true,
+              "variant": "Baja huella"
+            }
+          },
+          {
+            "option_id": "O-004",
+            "id_material": "MAT-123",
+            "provedoor_id": "PROV-014",
+            "nombre_provedor": "Distribuidora Tablaroca Norte",
+            "supplier": {
+              "latitud": 19.5242,
+              "longitud": -99.0899,
+              "delivery": { "minDays": 2, "maxDays": 4 },
+              "rating": 4.1
+            },
+            "offer": {
+              "unidad": "m2",
+              "costo_unitario_mxn": 72.9,
+              "factor_emision_kgco2e_por_unidad": 0.905,
+              "co2_verified": false,
+              "variant": "Económica"
+            }
+          }
+        ]
+      },
+      {
+        "req_id": "R-002",
+        "match_rule": "material_nombre_exact",
+        "options": [
+          {
+            "option_id": "O-101",
+            "id_material": "MAT-021",
+            "provedoor_id": "PROV-007",
+            "nombre_provedor": "Yesos y Acabados Roma",
+            "supplier": {
+              "latitud": 19.276039,
+              "longitud": -99.32306,
+              "delivery": { "minDays": 2, "maxDays": 5 },
+              "rating": 4.4
+            },
+            "offer": {
+              "unidad": "L",
+              "costo_unitario_mxn": 58.6,
+              "factor_emision_kgco2e_por_unidad": 0.298,
+              "co2_verified": false,
+              "variant": "Estándar"
+            }
+          },
+          {
+            "option_id": "O-102",
+            "id_material": "MAT-024",
+            "provedoor_id": "PROV-008",
+            "nombre_provedor": "Pinturas y Recubrimientos Centro",
+            "supplier": {
+              "latitud": 19.553826,
+              "longitud": -99.31032,
+              "delivery": { "minDays": 1, "maxDays": 2 },
+              "rating": 4.5
+            },
+            "offer": {
+              "unidad": "L",
+              "costo_unitario_mxn": 71.44,
+              "factor_emision_kgco2e_por_unidad": 0.336,
+              "co2_verified": false,
+              "variant": "Estándar"
+            }
+          },
+          {
+            "option_id": "O-103",
+            "id_material": "MAT-201",
+            "provedoor_id": "PROV-015",
+            "nombre_provedor": "Pinturas Verdes Azcapo",
+            "supplier": {
+              "latitud": 19.4771,
+              "longitud": -99.1852,
+              "delivery": { "minDays": 1, "maxDays": 2 },
+              "rating": 4.7
+            },
+            "offer": {
+              "unidad": "L",
+              "costo_unitario_mxn": 79.2,
+              "factor_emision_kgco2e_por_unidad": 0.215,
+              "co2_verified": true,
+              "variant": "Baja huella (base agua)"
+            }
+          },
+          {
+            "option_id": "O-104",
+            "id_material": "MAT-202",
+            "provedoor_id": "PROV-016",
+            "nombre_provedor": "Mayorista Pintura Sur",
+            "supplier": {
+              "latitud": 19.3046,
+              "longitud": -99.1438,
+              "delivery": { "minDays": 2, "maxDays": 4 },
+              "rating": 4.2
+            },
+            "offer": {
+              "unidad": "L",
+              "costo_unitario_mxn": 54.9,
+              "factor_emision_kgco2e_por_unidad": 0.355,
+              "co2_verified": false,
+              "variant": "Económica"
+            }
+          }
+        ]
+      },
+      {
+        "req_id": "R-003",
+        "match_rule": "material_nombre_exact",
+        "options": [
+          {
+            "option_id": "O-201",
+            "id_material": "MAT-002",
+            "provedoor_id": "PROV-001",
+            "nombre_provedor": "Materiales Iztapalapa S.A. de C.V.",
+            "supplier": {
+              "latitud": 19.569573,
+              "longitud": -99.307641,
+              "delivery": { "minDays": 3, "maxDays": 6 },
+              "rating": 4.3
+            },
+            "offer": {
+              "unidad": "t",
+              "costo_unitario_mxn": 413.0,
+              "factor_emision_kgco2e_por_unidad": 7.126,
+              "co2_verified": false,
+              "variant": "Estándar"
+            }
+          },
+          {
+            "option_id": "O-202",
+            "id_material": "MAT-017",
+            "provedoor_id": "PROV-006",
+            "nombre_provedor": "Logística y Agregados Anáhuac",
+            "supplier": {
+              "latitud": 19.552043,
+              "longitud": -99.046702,
+              "delivery": { "minDays": 2, "maxDays": 4 },
+              "rating": 4.2
+            },
+            "offer": {
+              "unidad": "t",
+              "costo_unitario_mxn": 295.0,
+              "factor_emision_kgco2e_por_unidad": 10.701,
+              "co2_verified": false,
+              "variant": "Estándar"
+            }
+          },
+          {
+            "option_id": "O-203",
+            "id_material": "MAT-301",
+            "provedoor_id": "PROV-017",
+            "nombre_provedor": "Agregados Cercanos Tláhuac",
+            "supplier": {
+              "latitud": 19.3102,
+              "longitud": -99.0619,
+              "delivery": { "minDays": 1, "maxDays": 2 },
+              "rating": 4.0
+            },
+            "offer": {
+              "unidad": "t",
+              "costo_unitario_mxn": 468.0,
+              "factor_emision_kgco2e_por_unidad": 5.95,
+              "co2_verified": true,
+              "variant": "Baja huella (local)"
+            }
+          },
+          {
+            "option_id": "O-204",
+            "id_material": "MAT-302",
+            "provedoor_id": "PROV-018",
+            "nombre_provedor": "Bancos de Arena Oriente",
+            "supplier": {
+              "latitud": 19.5855,
+              "longitud": -99.1762,
+              "delivery": { "minDays": 2, "maxDays": 3 },
+              "rating": 4.5
+            },
+            "offer": {
+              "unidad": "t",
+              "costo_unitario_mxn": 332.0,
+              "factor_emision_kgco2e_por_unidad": 8.2,
+              "co2_verified": false,
+              "variant": "Económica"
+            }
+          }
+        ]
+      },
+      {
+        "req_id": "R-004",
+        "match_rule": "material_nombre_exact",
+        "options": [
+          {
+            "option_id": "O-301",
+            "id_material": "MAT-001",
+            "provedoor_id": "PROV-001",
+            "nombre_provedor": "Materiales Iztapalapa S.A. de C.V.",
+            "supplier": {
+              "latitud": 19.569573,
+              "longitud": -99.307641,
+              "delivery": { "minDays": 3, "maxDays": 6 },
+              "rating": 4.3
+            },
+            "offer": {
+              "unidad": "kg",
+              "costo_unitario_mxn": 21.72,
+              "factor_emision_kgco2e_por_unidad": 1.63,
+              "co2_verified": false,
+              "variant": "Estándar"
+            }
+          },
+          {
+            "option_id": "O-302",
+            "id_material": "MAT-009",
+            "provedoor_id": "PROV-003",
+            "nombre_provedor": "Aceros Oriente",
+            "supplier": {
+              "latitud": 19.225845,
+              "longitud": -99.073555,
+              "delivery": { "minDays": 4, "maxDays": 7 },
+              "rating": 4.2
+            },
+            "offer": {
+              "unidad": "kg",
+              "costo_unitario_mxn": 24.33,
+              "factor_emision_kgco2e_por_unidad": 1.844,
+              "co2_verified": false,
+              "variant": "Estándar"
+            }
+          },
+          {
+            "option_id": "O-303",
+            "id_material": "MAT-401",
+            "provedoor_id": "PROV-019",
+            "nombre_provedor": "Aceros Reciclados Valle",
+            "supplier": {
+              "latitud": 19.4326,
+              "longitud": -99.1332,
+              "delivery": { "minDays": 2, "maxDays": 4 },
+              "rating": 4.6
+            },
+            "offer": {
+              "unidad": "kg",
+              "costo_unitario_mxn": 29.8,
+              "factor_emision_kgco2e_por_unidad": 1.32,
+              "co2_verified": true,
+              "variant": "Reciclado"
+            }
+          },
+          {
+            "option_id": "O-304",
+            "id_material": "MAT-402",
+            "provedoor_id": "PROV-020",
+            "nombre_provedor": "Mallas Industriales Naucalpan",
+            "supplier": {
+              "latitud": 19.4789,
+              "longitud": -99.2391,
+              "delivery": { "minDays": 2, "maxDays": 5 },
+              "rating": 4.1
+            },
+            "offer": {
+              "unidad": "kg",
+              "costo_unitario_mxn": 23.4,
+              "factor_emision_kgco2e_por_unidad": 1.71,
+              "co2_verified": false,
+              "variant": "Económica"
+            }
+          }
+        ]
+      }
+    ],
+    "objectives": {
+      "minimize": ["total_cost_mxn", "total_co2e_kg", "total_distance_km"]
+    },
+    "evaluation": {
+      "cost_formula": "sum(req.cantidad * selected.offer.costo_unitario_mxn)",
+      "co2_formula": "sum(req.cantidad * selected.offer.factor_emision_kgco2e_por_unidad)",
+      "distance_formula": "sum(haversine_km(site, selected.supplier))"
+    },
+    "constraints": {
+      "hard": [
+        { "name": "one_option_per_requirement", "definition": "Pick exactly 1 option for each req_id" },
+        { "name": "unit_match", "definition": "selected.offer.unidad must equal requirement.unidad" }
+      ],
+      "soft": [
+        {
+          "name": "prefer_verified_co2",
+          "penalty": { "multiplier_on_total_co2": 1.05, "condition": "selected.offer.co2_verified == false" }
+        }
+      ]
+    },
+    "nsga2": {
+      "population_size": 160,
+      "generations": 200,
+      "crossover_probability": 0.9,
+      "mutation_probability": 0.10,
+      "encoding": {
+        "type": "index_per_requirement",
+        "gene_domain": "indices of options array per req_id"
+      },
+      "seed": 42
+    },
+    "output_preferences": {
+      "return_pareto_front": true,
+      "max_solutions": 25
+    }
+  }
+  
