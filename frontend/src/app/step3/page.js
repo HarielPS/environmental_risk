@@ -27,6 +27,7 @@ import {
   Filter,
   ArrowUpDown,
 } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 // --- CAPA DE SERVICIOS (LÓGICA DE BACKEND SEPARADA) ---
 
@@ -800,6 +801,7 @@ const ProductCard = ({
 // --- VISTA DETALLE EMPRESA ---
 
 const SupplierDetailView = ({ supplier, onClose }) => {
+  const router = useRouter();
   const mapEmbedUrl = `https://www.google.com/maps?q=${encodeURIComponent(supplier.address)}&output=embed`;
 
   return (
@@ -810,7 +812,7 @@ const SupplierDetailView = ({ supplier, onClose }) => {
             onClick={onClose}
             className="flex items-center gap-2 text-slate-400 hover:text-slate-900 font-bold mb-6 group text-sm"
           >
-            <ArrowLeft size={18} /> Volver
+            <ArrowLeft size={18} onClick={router.push('home')}/> Volver
           </button>
           <div className="flex flex-col gap-4">
             <SupplierLogo supplier={supplier} size="lg" />
@@ -851,6 +853,7 @@ const SupplierDetailView = ({ supplier, onClose }) => {
 // --- APP PRINCIPAL ---
 
 export default function App() {
+  const router = useRouter();
   const [steps, setSteps] = useState([]);
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
   const [currentOffers, setCurrentOffers] = useState([]);
