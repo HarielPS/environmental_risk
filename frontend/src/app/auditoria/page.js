@@ -157,7 +157,7 @@ const App = () => {
       );
     } finally {
       setIsSubmitting(false);
-      router.push("/steps");
+      router.push("/step1");
     }
   };
 
