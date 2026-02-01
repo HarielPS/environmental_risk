@@ -1,0 +1,107 @@
+####################################
+# Python
+####################################
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+.cache/
+.pytest_cache/
+.mypy_cache/
+
+####################################
+# Virtual environments
+####################################
+.venv/
+venv/
+env/
+ENV/
+
+####################################
+# Environment variables / secrets
+####################################
+.env
+.env.*
+!.env.example
+
+####################################
+# Data (ML / datasets)
+####################################
+data/raw/
+data/processed/
+*.csv
+*.xlsx
+*.parquet
+
+####################################
+# ML artifacts
+####################################
+ml-credit/models/
+ml-credit/artifacts/
+ml-text/models/
+ml-anomaly/models/
+ml-letter/models/
+
+####################################
+# Logs & outputs
+####################################
+logs/
+*.log
+
+####################################
+# Jupyter / Notebooks
+####################################
+.ipynb_checkpoints/
+
+####################################
+# Node / JS (frontend & backend)
+####################################
+node_modules/
+.next/
+out/
+dist/
+build/
+
+####################################
+# Node / JS debug & diagnostics
+####################################
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.nyc_output/
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+####################################
+# Temp / runtime
+####################################
+.temp/
+.tmp/
+pids/
+*.pid
+*.pid.lock
+*.seed
+
+####################################
+# Docker
+####################################
+*.tar
+docker-compose.override.yml
+
+####################################
+# OS / Editor
+####################################
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+####################################
+# Coverage / reports
+####################################
+coverage/
+htmlcov/
