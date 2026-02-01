@@ -14,10 +14,14 @@ import { UpdateCompanyDto } from './dto/update-company.dto';
 import { CreateObraDto } from './dto/create-obra.dto';
 import { UpdateObraDto } from './dto/update-obra.dto';
 import { ParseObjectIdPipe } from '../common/pipes/parse-objectid.pipe';
+import { OptimizerService } from 'src/optimizer/optimizer.service';
 
 @Controller('companies')
 export class CompaniesController {
-  constructor(private readonly companiesService: CompaniesService) {}
+  constructor(
+    private readonly companiesService: CompaniesService,
+    private readonly optimizerService: OptimizerService,
+  ) {}
 
   // CRUD Companies
   @Post()
@@ -86,4 +90,20 @@ export class CompaniesController {
   ) {
     return this.companiesService.removeObra(id, obraId);
   }
+
+  @Post(':id/obras/:obraId/optimize')
+  optimizeObra(@Param('id') id: string, @Param('obraId') obraId: string) {
+    return this.companiesService.optimizeObra(id, obraId);
+  }
+
+  @Get('optimizer/health')
+  optimizerHealth() {
+    return this.optimizerService.health();
+  }
+
+  @Get(':id/obras/:obraId/nsga-input')
+  async nsgaInput(@Param('id') id: string, @Param('obraId') obraId: string) {
+    return this.companiesService.getNsgaInput(id, obraId);
+  }
+
 }
