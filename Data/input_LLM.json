@@ -1,0 +1,96 @@
+{
+  "obra_id": "OBRA-001",
+  "obra_tipo": "vivienda_unifamiliar",
+  "obra_descripcion": "Casa chica 1 nivel, 45 m2, muros de block, losa de concreto",
+  "ubicacion": {
+    "pais": "MX",
+    "estado": "CDMX",
+    "alcaldia_municipio": "Iztapalapa"
+  },
+  "normativa_objetivo": {
+    "co2": ["RENE", "ISO_14064-1", "ISO_14067", "GHG_Protocol_Scope3"],
+    "ambiental_obra": ["NACDMX-007-RNAT-2019", "NADF-018-AMBT-2009", "Ley_Residuos_Solidos_CDMX"],
+    "construccion_base": ["Reglamento_Construcciones_CDMX"],
+    "instalaciones_opcional": ["NOM-001-SEDE-2012"]
+  },
+  "materiales": [
+    {
+      "material_nombre": "Cemento CPC 30R",
+      "categoria": "cemento",
+      "cantidad": 8.0,
+      "unidad": "t",
+      "costo_unitario_mxn": 3200,
+      "factor_emision_kgco2e_por_unidad": 850,
+      "co2e_kg": 6800,
+      "proveedor": { "nombre": "Proveedor Local A", "dist_km": 25, "transporte": "camion" }
+    },
+    {
+      "material_nombre": "Varilla 3/8 Grado 42",
+      "categoria": "acero",
+      "cantidad": 1200,
+      "unidad": "kg",
+      "costo_unitario_mxn": 22,
+      "factor_emision_kgco2e_por_unidad": 1.7,
+      "co2e_kg": 2040,
+      "proveedor": { "nombre": "Acerera B", "dist_km": 60, "transporte": "camion" }
+    },
+    {
+      "material_nombre": "Concreto premezclado f'c=200",
+      "categoria": "concreto",
+      "cantidad": 25,
+      "unidad": "m3",
+      "costo_unitario_mxn": 2300,
+      "factor_emision_kgco2e_por_unidad": 300,
+      "co2e_kg": 7500,
+      "proveedor": { "nombre": "Planta Concreto C", "dist_km": 18, "transporte": "camion_olla" }
+    },
+    {
+      "material_nombre": "Block hueco 12x20x40",
+      "categoria": "mamposteria",
+      "cantidad": 1800,
+      "unidad": "pza",
+      "costo_unitario_mxn": 16,
+      "factor_emision_kgco2e_por_unidad": 1.1,
+      "co2e_kg": 1980,
+      "proveedor": { "nombre": "Blockera D", "dist_km": 35, "transporte": "camion" }
+    },
+    {
+      "material_nombre": "Mortero/arena/grava (mezcla)",
+      "categoria": "agregados",
+      "cantidad": 20,
+      "unidad": "t",
+      "costo_unitario_mxn": 450,
+      "factor_emision_kgco2e_por_unidad": 12,
+      "co2e_kg": 240,
+      "proveedor": { "nombre": "Banco Materiales E", "dist_km": 40, "transporte": "camion" }
+    },
+    {
+      "material_nombre": "Yeso/pasta/recubrimientos",
+      "categoria": "acabados",
+      "cantidad": 2.0,
+      "unidad": "t",
+      "costo_unitario_mxn": 4200,
+      "factor_emision_kgco2e_por_unidad": 250,
+      "co2e_kg": 500,
+      "proveedor": { "nombre": "Distribuidor F", "dist_km": 20, "transporte": "camioneta" }
+    },
+    {
+      "material_nombre": "Pintura vinílica",
+      "categoria": "acabados",
+      "cantidad": 120,
+      "unidad": "L",
+      "costo_unitario_mxn": 95,
+      "factor_emision_kgco2e_por_unidad": 2.5,
+      "co2e_kg": 300,
+      "proveedor": { "nombre": "Ferretería G", "dist_km": 8, "transporte": "camioneta" }
+    }
+  ],
+  "resumen": {
+    "costo_estimado_mxn": 0,
+    "co2e_total_kg": 19360,
+    "notas": [
+      "Factores de emisión son placeholders para MVP; idealmente provienen de EPD/ISO 14067 o bases LCA verificables.",
+      "El MVP debe generar checklist de RCD (NACDMX-007) y control de polvo (NADF-018) y alertas de trámite si hay intervención estructural."
+    ]
+  }
+}
