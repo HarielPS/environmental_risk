@@ -6,6 +6,11 @@ services:
       - "27017:27017"
     volumes:
       - mongo_data:/data/db
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "mongodb://localhost:27017/admin", "--eval", "db.runCommand({ ping: 1 }).ok"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
 
   backend:
     build:
@@ -20,12 +25,30 @@ services:
       # IMPORTANTE: dentro de docker NO uses localhost para mongo
       - MONGO_URI=mongodb://mongo:27017/tec_environmental_risk
       - PORT=3001
+      # URL interna del microservicio optimizer (dentro de la red docker)
+      - OPTIMIZER_URL=http://tec_optimizer:8000
     depends_on:
-      - mongo
+      mongo:
+        condition: service_healthy
+      tec_optimizer:
+        condition: service_started
     volumes:
-      # opcional para dev hot-reload (si tu Dockerfile soporta dev)
       - ./backend:/app
       - /app/node_modules
+
+  tec_optimizer:
+    build:
+      context: ./IA-LLM/optimizer_service
+      dockerfile: Dockerfile
+    container_name: tec_optimizer
+    ports:
+      - "8002:8000"   # host:contenedor (solo para debug)
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health').read()"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
 
 volumes:
   mongo_data:

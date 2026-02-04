@@ -1,0 +1,140 @@
+{
+  "obra_id": "OBRA-001",
+  "docs": [
+    {
+      "doc_key": "ISO_14064-1",
+      "doc_id": "ISO_14064_org",
+      "path": "/home/harielpadillasanchez/Documentos/hackathon/Tec_environmental_risk/Data/rag_normas/ISO_14064_org.pdf",
+      "selected_pages_0index": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        37
+      ],
+      "allowlist_used": true,
+      "extraction_mode_stats": {
+        "text_layer": 12,
+        "ocr": 0
+      }
+    },
+    {
+      "doc_key": "ISO_14067",
+      "doc_id": "ISO_14067_extracto",
+      "path": "/home/harielpadillasanchez/Documentos/hackathon/Tec_environmental_risk/Data/rag_normas/ISO_14067_extracto_indice.pdf",
+      "selected_pages_0index": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "allowlist_used": false,
+      "extraction_mode_stats": {
+        "text_layer": 5,
+        "ocr": 0
+      }
+    },
+    {
+      "doc_key": "GHG_Protocol_Scope3",
+      "doc_id": "GHG_Protocol_corp",
+      "path": "/home/harielpadillasanchez/Documentos/hackathon/Tec_environmental_risk/Data/rag_normas/GHG_Protocol_corp.pdf",
+      "selected_pages_0index": [
+        21,
+        22,
+        43,
+        44,
+        119
+      ],
+      "allowlist_used": true,
+      "extraction_mode_stats": {
+        "text_layer": 5,
+        "ocr": 0
+      }
+    },
+    {
+      "doc_key": "NACDMX-007-RNAT-2019",
+      "doc_id": "NACDMX_RCD",
+      "path": "/home/harielpadillasanchez/Documentos/hackathon/Tec_environmental_risk/Data/rag_normas/NACDMX_RCD.pdf",
+      "selected_pages_0index": [
+        97,
+        98,
+        99,
+        119,
+        120
+      ],
+      "allowlist_used": true,
+      "extraction_mode_stats": {
+        "text_layer": 5,
+        "ocr": 0
+      }
+    },
+    {
+      "doc_key": "Ley_Residuos_Solidos_CDMX",
+      "doc_id": "LRS_RSD_CDMX",
+      "path": "/home/harielpadillasanchez/Documentos/hackathon/Tec_environmental_risk/Data/rag_normas/LRS_RSD_CDMX.pdf",
+      "selected_pages_0index": [
+        14,
+        25,
+        27,
+        31,
+        32
+      ],
+      "allowlist_used": true,
+      "extraction_mode_stats": {
+        "text_layer": 5,
+        "ocr": 0
+      }
+    },
+    {
+      "doc_key": "Reglamento_Construcciones_CDMX",
+      "doc_id": "RGTO_CONSTR_CDMX",
+      "path": "/home/harielpadillasanchez/Documentos/hackathon/Tec_environmental_risk/Data/rag_normas/RGTO_CONSTR_CDMX.pdf",
+      "selected_pages_0index": [
+        24,
+        42,
+        50,
+        61,
+        80
+      ],
+      "allowlist_used": true,
+      "extraction_mode_stats": {
+        "text_layer": 5,
+        "ocr": 0
+      }
+    },
+    {
+      "doc_key": "NOM-001-SEDE-2012",
+      "doc_id": "NOM001_electrica",
+      "path": "/home/harielpadillasanchez/Documentos/hackathon/Tec_environmental_risk/Data/rag_normas/NOM001_electrica.pdf",
+      "selected_pages_0index": [
+        266,
+        633
+      ],
+      "allowlist_used": true,
+      "extraction_mode_stats": {
+        "text_layer": 2,
+        "ocr": 0
+      }
+    }
+  ],
+  "missing_docs": [
+    {
+      "doc_key": "RENE",
+      "doc_id": "RENE",
+      "norma": "RENE"
+    },
+    {
+      "doc_key": "NADF-018-AMBT-2009",
+      "doc_id": "NADF-018-AMBT-2009",
+      "norma": "NADF-018-AMBT-2009"
+    }
+  ]
+}

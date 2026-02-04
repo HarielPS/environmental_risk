@@ -159,7 +159,7 @@ const App = () => {
     await serverIsReady();
 
     setView("success");         // ✅ ahora sí usas la vista success
-    router.push("/step3");      // ✅ navega solo si fue éxito
+    router.push("/resultados");      // ✅ navega solo si fue éxito
   } catch (error) {
     console.error(error);
     setToast("Hubo un problema al procesar los archivos. Inténtalo de nuevo.");

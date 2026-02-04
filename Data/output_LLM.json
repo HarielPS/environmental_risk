@@ -5,35 +5,61 @@
     "estatus": "needs_info",
     "riesgo": "medio",
     "razones": [
-      "Falta unidad funcional y límites del cálculo ISO 14067",
-      "Falta plan de manejo RCD NACDMX-007",
-      "Falta plan/bitácora de control de polvo NADF-018"
+      "Falta información sobre la implementación de RCD y control de polvo según NACDMX-007-RNAT-2019 y NADF-018-AMBT-2009.",
+      "Falta información sobre la emisión de CO2 de los materiales según normas ISO_14064-1, ISO_14067 y GHG_Protocol_Scope3.",
+      "Falta información sobre la emisión de CO2e de los materiales según normas ISO_14064-1, ISO_14067 y GHG_Protocol_Scope3."
     ]
   },
   "por_norma": [
     {
+      "norma": "RENE",
+      "estatus": "needs_info",
+      "evidencia_usada": [],
+      "faltantes": [
+        "Implementación de RCD y control de polvo según NACDMX-007-RNAT-2019 y NADF-018-AMBT-2009."
+      ],
+      "acciones_recomendadas": [
+        "Revisar la implementación de RCD y control de polvo según NACDMX-007-RNAT-2019 y NADF-018-AMBT-2009."
+      ]
+    },
+    {
+      "norma": "ISO_14064-1",
+      "estatus": "needs_info",
+      "evidencia_usada": [],
+      "faltantes": [
+        "Emisión de CO2 de los materiales según normas ISO_14064-1, ISO_14067 y GHG_Protocol_Scope3."
+      ],
+      "acciones_recomendadas": [
+        "Calcular la emisión de CO2 de los materiales según normas ISO_14064-1, ISO_14067 y GHG_Protocol_Scope3."
+      ]
+    },
+    {
       "norma": "ISO_14067",
       "estatus": "needs_info",
-      "evidencia_usada": ["materiales[*].co2e_kg", "obra_descripcion", "ubicacion"],
-      "faltantes": ["unidad_funcional", "etapas_ciclo_vida", "fuentes_factores", "incertidumbre"],
-      "acciones_recomendadas": ["Definir unidad funcional", "Declarar límites (A1-A3/A4/A5)", "Vincular factores a EPD/LCA"]
-    },
-    {
-      "norma": "NACDMX-007-RNAT-2019",
-      "estatus": "needs_info",
-      "faltantes": ["estimacion_rcd", "sitio_disposicion", "transportista", "evidencias_manifiestos"],
-      "acciones_recomendadas": ["Crear plan de manejo RCD", "Separación y destino autorizado", "Guardar comprobantes"]
-    },
-    {
-      "norma": "NADF-018-AMBT-2009",
-      "estatus": "needs_info",
-      "faltantes": ["medidas_control_polvo", "bitacora_control", "responsable"],
-      "acciones_recomendadas": ["Checklist de control de polvo", "Bitácora diaria por fase de obra"]
+      "evidencia_usada": [],
+      "faltantes": [
+        "Emisión de CO2e de los materiales según normas ISO_14064-1, ISO_14067 y GHG_Protocol_Scope3."
+      ],
+      "acciones_recomendadas": [
+        "Calcular la emisión de CO2e de los materiales según normas ISO_14064-1, ISO_14067 y GHG_Protocol_Scope3."
+      ]
     }
   ],
   "preguntas_para_completar": [
-    "¿La huella es solo materiales (cradle-to-gate) o incluye transporte y obra (A4/A5)?",
-    "¿Habrá demolición o solo construcción?",
-    "¿Existe licencia/manifestación y DRO?"
+    "¿Se han realizado los dictámenes técnicos de estabilidad y seguridad estructural según el Reglamento de Construcciones CDMX?",
+    "¿Se han generado los Constancias de seguridad estructural cumpliendo con las NTC-RSEE?",
+    "¿Se han realizado acciones de la Administración para la atención de emergencias mayores, como la revisión de seguridad estructural y la rehabilitación sísmica de edificios?",
+    "¿Se han generado el checklist de RCD y control de polvo según NACDMX-007-RNAT-2019 y NADF-018-AMBT-2009?",
+    "¿Se han realizado las inspecciones de las estructuras colindantes durante la obra?",
+    "¿Se han realizado las verificaciones para pequeños y grandes generadores según NACDMX-007-RNAT-2019?",
+    "¿Se han realizado las verificaciones para centros de acopio y/o centros de transferencia según NACDMX-007-RNAT-2019?",
+    "¿Se han realizado las verificaciones para prestadores de servicio de recolección y transporte de los residuos de la construcción y demolición según NACDMX-007-RNAT-2019?",
+    "¿Se han realizado las verificaciones para plantas de reciclaje de residuos de la construcción y demolición según NACDMX-007-RNAT-2019?",
+    "¿Se han generado los informes de datos sobre los GEI según ISO_14064-1, ISO_14067 y GHG_Protocol_Scope3?",
+    "¿Se han realizado las inspecciones de las estructuras colindantes durante la obra?",
+    "¿Se han realizado las verificaciones para centros de acopio y/o centros de transferencia según NACDMX-007-RNAT-2019?",
+    "¿Se han realizado las verificaciones para prestadores de servicio de recolección y transporte de los residuos de la construcción y demolición según NACDMX-007-RNAT-2019?",
+    "¿Se han realizado las verificaciones para plantas de reciclaje de residuos de la construcción y demolición según NACDMX-007-RNAT-2019?",
+    "¿Se han generado los informes de datos sobre los GEI según ISO_14064-1, ISO_14067 y GHG_Protocol_Scope3?"
   ]
 }

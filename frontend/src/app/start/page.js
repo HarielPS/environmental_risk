@@ -600,7 +600,7 @@ const App = () => {
       console.error("Error enviando datos", err);
     } finally {
       clearInterval(interval);
-      router.push('/steps');
+      router.push('/resultados');
       //setIsSubmitting(false);
     }
   };

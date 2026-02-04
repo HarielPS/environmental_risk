@@ -27,15 +27,16 @@ import {
   Filter,
   ArrowUpDown,
 } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 // --- CAPA DE SERVICIOS (LÓGICA DE BACKEND SEPARADA) ---
-
 /**
  * Función principal de búsqueda y filtrado.
  * Esta lógica simula el procesamiento que haría un Backend (SQL/NoSQL).
  */
 const searchProductsFromBackend = async (query, filters = {}) => {
   await new Promise((resolve) => setTimeout(resolve, 600));
+
 
   const database = [
     // =========================
@@ -851,6 +852,7 @@ const SupplierDetailView = ({ supplier, onClose }) => {
 // --- APP PRINCIPAL ---
 
 export default function App() {
+  const router = useRouter();
   const [steps, setSteps] = useState([]);
   const [currentStepIndex, setCurrentStepIndex] = useState(0);
   const [currentOffers, setCurrentOffers] = useState([]);
@@ -1324,10 +1326,11 @@ export default function App() {
             </span>
           </div>
           <button
-            disabled={Object.keys(cart).length === 0}
-            className="px-12 py-4 bg-blue-600 text-white rounded-2xl font-black hover:bg-blue-700 transition-all shadow-xl shadow-blue-100 flex items-center gap-2 active:scale-95 disabled:opacity-20"
+            onClick={() => router.push("/step1")}
+            className="inline-flex items-center justify-center gap-2 rounded-full bg-emerald-400 px-4 py-2.5 text-xs md:text-sm font-semibold text-slate-900 shadow-sm hover:bg-emerald-300 transition-colors"
           >
-            Finalizar Orden <ArrowRight size={20} />
+            Visualizar opciones óptimas
+            <ArrowRight size={16} />
           </button>
         </div>
       </footer>
